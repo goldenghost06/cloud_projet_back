@@ -1,0 +1,7 @@
+CREATE DATABASE @username;
+
+CREATE USER @username@'20.36.129.219' IDENTIFIED BY @password;
+
+GRANT ALL PRIVILEGES ON @username.* TO @username@'20.36.129.219';
+
+FLUSH PRIVILEGES;

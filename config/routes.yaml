@@ -1,3 +1,18 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+api_user_get:
+   path: '/api/user/register'
+   controller: App\Controller\AuthentificationController::index
+   methods: [POST]
+
+api_user_disk:
+   path: '/api/user/disk'
+   controller: App\Controller\DiskSpaceController::getUsedSpaceDisk
+   methods: [POST]
+
+api_user_files:
+   path: '/api/user/files'
+   controller: App\Controller\FilesController::index
+   methods: [POST]
